@@ -1,0 +1,56 @@
+{
+  "name": "front-srvc",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "eslint": "eslint src --color --ext .js,.jsx --report-unused-disable-directives",
+    "eslint:fix": "npm run eslint -- --fix",
+    "prettier": "prettier src --check",
+    "prettier:fix": "prettier src --write",
+    "stylelint": "stylelint --color \"src/*.{css,scss}\"",
+    "stylelint:fix": "npm run stylelint -- --fix",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "*.{js,jsx,html,css,scss,json}": "prettier --check",
+    "*.{js,jsx}": "eslint --report-unused-disable-directives",
+    "*.{css,scss}": "stylelint"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.14",
+    "@types/react-dom": "^18.2.6",
+    "@vitejs/plugin-basic-ssl": "^1.0.1",
+    "@vitejs/plugin-react-swc": "^3.3.2",
+    "autoprefixer": "^10.4.14",
+    "eslint": "^8.44.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-n": "^16.0.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.1",
+    "husky": "^8.0.0",
+    "lint-staged": "^13.2.3",
+    "postcss": "^8.4.26",
+    "prettier": "^3.0.0",
+    "prettier-plugin-tailwindcss": "^0.4.1",
+    "sass": "^1.64.0",
+    "stylelint": "^15.10.1",
+    "stylelint-config-standard-scss": "^10.0.0",
+    "tailwindcss": "^3.3.3",
+    "vite": "^4.4.0",
+    "vite-plugin-eslint": "^1.8.1",
+    "vite-plugin-stylelint": "^4.3.0"
+  }
+}

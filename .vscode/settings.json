@@ -1,0 +1,11 @@
+{
+  "files.encoding": "utf8",
+  "files.eol": "auto",
+  "editor.formatOnSave": true,
+  "[javascript][javascriptreact][html][css][scss][json][jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false
+}
