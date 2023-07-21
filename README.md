@@ -1,8 +1,8 @@
-# React Boilerplate build with Vite
+# React boilerplate build with Vite
 
 This is a React boilerplate with Vite, SWC, SSL, TailwindCSS, SASS, ESlint, Stylelint, Prettier, Husky and lint-staged.
 
-## What is inside?
+## What's inside
 
 - [React](https://react.dev)
 - [Vite](https://vitejs.dev)
@@ -18,7 +18,7 @@ This is a React boilerplate with Vite, SWC, SSL, TailwindCSS, SASS, ESlint, Styl
 
 ## Installation
 
-```console
+```bash
 npx degit matteocastiglioni/react-boilerplate#main my-new-project
 cd my-new-project
 npm i
@@ -36,7 +36,7 @@ npm run dev
 
 Start the development server with hot reloading on a custom domain.
 
-<span style="color:orange">_You need to map the domain._</span>
+> You need to map the domain.
 
 ```bash
 npm run dev -- --host www.my-new-project.local
@@ -46,7 +46,7 @@ npm run dev -- --host www.my-new-project.local
 
 Create the build for production.
 
-<span style="color:orange">_The output folder is defined in the Vite configuration file._</span>
+> The output folder is defined in the Vite configuration file.
 
 ```bash
 npm run build
@@ -62,7 +62,7 @@ npm run preview
 
 Locally preview the production build on a custom domain.
 
-<span style="color:orange">_You need to map the domain._</span>
+> You need to map the domain.
 
 ```bash
 npm run preview -- --host www.my-new-project.local
@@ -70,34 +70,37 @@ npm run preview -- --host www.my-new-project.local
 
 ### &bull; Lint
 
-<span style="color:orange">_Every command is executed only on files in the "src" folder._</span>
+> Every command is executed only on files in the "src" folder.
 
-#### - ESlint
+#### ESlint
 
 ```bash
 # only to perform a file check and issue a report
 npm run eslint
-
+```
+```bash
 # to run a file check and fix errors
 npm run eslint:fix
 ```
 
-#### - Prettier
+#### Prettier
 
 ```bash
 # only to perform a file check and issue a report
 npm run prettier
-
+```
+```bash
 # to run a file check and fix errors
 npm run prettier:fix
 ```
 
-#### - Stylelint
+#### Stylelint
 
 ```bash
 # only to perform a file check and issue a report
 npm run stylelint
-
+```
+```bash
 # to run a file check and fix errors
 npm run stylelint:fix
 ```
