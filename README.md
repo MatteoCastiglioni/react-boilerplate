@@ -46,8 +46,6 @@ npm run dev -- --host www.my-new-project.local
 
 Create the build for production.
 
-> The output folder is defined in the Vite configuration file.
-
 ```bash
 npm run build
 ```
@@ -78,6 +76,7 @@ npm run preview -- --host www.my-new-project.local
 # only to perform a file check and issue a report
 npm run eslint
 ```
+
 ```bash
 # to run a file check and fix errors
 npm run eslint:fix
@@ -89,6 +88,7 @@ npm run eslint:fix
 # only to perform a file check and issue a report
 npm run prettier
 ```
+
 ```bash
 # to run a file check and fix errors
 npm run prettier:fix
@@ -100,6 +100,7 @@ npm run prettier:fix
 # only to perform a file check and issue a report
 npm run stylelint
 ```
+
 ```bash
 # to run a file check and fix errors
 npm run stylelint:fix
