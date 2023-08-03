@@ -1,0 +1,31 @@
+version: "3.8"
+services:
+  app:
+    container_name: ${DOCKER_CONTAINER_NAME:?Missing DOCKER_CONTAINER_NAME env variable}
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: development
+    ports:
+      - 5173:5173
+      - 4173:4173
+    volumes:
+      - .:/home/app
+    tty: true
+    restart: always
+  nginx:
+    container_name: ${DOCKER_CONTAINER_NAME}-nginx
+    build:
+      context: .
+      target: server
+      args:
+        - NGINX_HOST=www.${DOCKER_CONTAINER_NAME}.local
+    depends_on:
+      - app
+    volumes:
+      - ./.nginx/default.conf.template:/etc/nginx/templates/default.conf.template:ro
+      - ./dist:/usr/share/nginx/html
+    ports:
+      - 8080:80
+      - 4433:443
+    restart: always

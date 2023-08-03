@@ -1,0 +1,10 @@
+.vscode
+node_modules
+dist
+.stylelintcache
+.dockerignore
+Dockerfile
+docker-compose.yml
+**/.DS_Store
+**/*.md
+*-lock.json

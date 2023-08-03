@@ -1,4 +1,10 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-npx lint-staged
+. "$(dirname -- "$0")/../.env"
+
+if [ $DOCKER_CONTAINER_NAME ]; then
+  docker exec $DOCKER_CONTAINER_NAME npx lint-staged
+else
+  npx lint-staged
+fi
