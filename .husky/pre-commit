@@ -4,7 +4,7 @@
 . "$(dirname -- "$0")/../.env"
 
 if [ "$(command -v docker)" -a $DOCKER_CONTAINER_NAME ]; then
-  docker exec $DOCKER_CONTAINER_NAME npx lint-staged
+  docker exec -u $(id -u):$(id -g) $DOCKER_CONTAINER_NAME npx lint-staged
 else
   npx lint-staged
 fi
