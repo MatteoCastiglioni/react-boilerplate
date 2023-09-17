@@ -1,11 +1,11 @@
 {
   "name": "@matteocastiglioni/react-boilerplate",
-  "version": "1.0.0",
-  "description": "React boilerplate with Vite, SWC, SSL, TailwindCSS, SASS, ESlint, Stylelint, Prettier, Husky and lint-staged",
+  "version": "2.0.2",
+  "description": "React boilerplate with Vite, SWC, SSL, TailwindCSS, SASS, ESlint, Stylelint, Prettier, Husky and lint-staged. It can be run with Docker without having to install any packages locally.",
   "keywords": [
     "boilerplate",
-    "react",
-    "vite",
+    "reactjs",
+    "vitejs",
     "swc",
     "ssl",
     "tailwindcss",
@@ -14,7 +14,9 @@
     "stylelint",
     "prettier",
     "husky",
-    "lint-staged"
+    "lint-staged",
+    "docker",
+    "docker-compose"
   ],
   "author": "Matteo Castiglioni (https://github.com/matteocastiglioni)",
   "homepage": "https://github.com/matteocastiglioni/react-boilerplate",
@@ -25,8 +27,8 @@
   "license": "GPL-3.0",
   "type": "module",
   "engines": {
-    "node": ">=18.17.0",
-    "npm": ">=9.6.7"
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
   },
   "scripts": {
     "dev": "vite",
